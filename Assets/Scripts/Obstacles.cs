@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Obstacles : MonoBehaviour
 {
-    public float m_MoveSpeed = 2f;
+    public static float m_MoveSpeed = 6f;
 
-    public float m_SpeedAcceleration = 3.0f;
+    public static float m_SpeedAcceleration = 0.005f;
 
     //private float m_StartTime = 0f;
 
@@ -30,9 +30,9 @@ public class Obstacles : MonoBehaviour
         //    Debug.Log("Sped up " + m_MoveSpeed);
         //}
 
-        transform.Translate(Vector3.left * Time.deltaTime * m_MoveSpeed);
+        transform.Translate(Vector2.left * Time.deltaTime * m_MoveSpeed);
 
-        m_MoveSpeed += m_SpeedAcceleration;
+        m_MoveSpeed += m_SpeedAcceleration * Time.deltaTime;
 
         Debug.Log(m_MoveSpeed);
 

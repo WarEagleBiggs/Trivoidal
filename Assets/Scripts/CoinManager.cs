@@ -19,6 +19,14 @@ public class CoinManager : MonoBehaviour
 
         CoinScoreboard.text = score.ToString();
 
+        MasterController.GetInstance.m_TopCoinCount += CoinAmount;
+    }
 
+    public void Update()
+    {
+        
+        
+
+        
     }
 }

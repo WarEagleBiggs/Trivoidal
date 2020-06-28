@@ -20,4 +20,5 @@ public class Jump : MonoBehaviour
             rb.velocity += Vector2.up * Physics2D.gravity.y * (m_FallMultiplier - 1) * Time.deltaTime;
         }
     }
+
 }
