@@ -1,0 +1,439 @@
+fileFormatVersion: 2
+guid: d52e38e5cd9f14fe1bbae7633b5fae44
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4781507494223687152
+    second: smileyman_0
+  - first:
+      213: 8512607917531158147
+    second: smileyman_1
+  - first:
+      213: -3596145307409657714
+    second: smileyman_2
+  - first:
+      213: 2608912108933202006
+    second: smileyman_3
+  - first:
+      213: 1205148518149242945
+    second: smileyman_4
+  - first:
+      213: -5748785655521413602
+    second: smileyman_5
+  - first:
+      213: 6230489404264334785
+    second: smileyman_6
+  - first:
+      213: 1484457486110175308
+    second: smileyman_7
+  - first:
+      213: 2626443531024217580
+    second: smileyman_8
+  - first:
+      213: 7497917854203922534
+    second: smileyman_9
+  - first:
+      213: 3957843925930932799
+    second: smileyman_10
+  - first:
+      213: -3588567352267316412
+    second: smileyman_11
+  - first:
+      213: -600591271479599349
+    second: smileyman_12
+  - first:
+      213: -2339068802407817002
+    second: smileyman_13
+  - first:
+      213: 1805457892360991648
+    second: smileyman_14
+  - first:
+      213: 3505223156172670727
+    second: smileyman_15
+  - first:
+      213: 2275836835033834981
+    second: smileyman_16
+  - first:
+      213: 3127220095759778094
+    second: smileyman_17
+  - first:
+      213: 4675913561182754995
+    second: smileyman_18
+  - first:
+      213: -4755899352951869632
+    second: smileyman_19
+  - first:
+      213: -8774306803614776957
+    second: smileyman_20
+  - first:
+      213: -7411534272785002153
+    second: smileyman_21
+  - first:
+      213: -6356487977718200469
+    second: smileyman_22
+  - first:
+      213: -1414557988336235402
+    second: smileyman_23
+  - first:
+      213: -5670146208336309501
+    second: smileyman_24
+  - first:
+      213: -1865387667380758398
+    second: smileyman_25
+  - first:
+      213: -3667947086759469007
+    second: smileyman_26
+  - first:
+      213: 4300207890740682940
+    second: smileyman_27
+  - first:
+      213: -5254510570658221864
+    second: smileyman_28
+  - first:
+      213: 1893302018449744808
+    second: smileyman_29
+  - first:
+      213: -5234695773508101708
+    second: smileyman_30
+  - first:
+      213: 6487583649370165990
+    second: smileyman_31
+  - first:
+      213: 9140372486467881945
+    second: smileyman_32
+  - first:
+      213: 3116872976410457745
+    second: smileyman_33
+  - first:
+      213: -1692424797085697719
+    second: smileyman_34
+  - first:
+      213: -4722971629397656057
+    second: smileyman_35
+  - first:
+      213: -2277203663977063696
+    second: smileyman_36
+  - first:
+      213: 3348078537447683130
+    second: smileyman_37
+  - first:
+      213: 4626131027184271001
+    second: smileyman_38
+  - first:
+      213: 319142291280177022
+    second: smileyman_39
+  - first:
+      213: -8701226807184903625
+    second: smileyman_40
+  - first:
+      213: 3423075963633415305
+    second: smileyman_41
+  - first:
+      213: 7740772569909925295
+    second: smileyman_42
+  - first:
+      213: -985869286443594712
+    second: smileyman_43
+  - first:
+      213: -3904618794937213137
+    second: smileyman_44
+  - first:
+      213: -4443309059271265660
+    second: smileyman_45
+  - first:
+      213: -2432224311423748535
+    second: smileyman_46
+  - first:
+      213: -8162850700327878246
+    second: smileyman_47
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: smileyman_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fd22148bb35b5240800000000000000
+      internalID: 4781507494223687152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smileyman_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3865f9c9ccbd22670800000000000000
+      internalID: 8512607917531158147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smileyman_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e80d82765ece71ec0800000000000000
+      internalID: -3596145307409657714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smileyman_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 650cd2f8db7b43420800000000000000
+      internalID: 2608912108933202006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smileyman_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 140cfdd213c89b010800000000000000
+      internalID: 1205148518149242945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smileyman_5
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e16f8c897e53830b0800000000000000
+      internalID: -5748785655521413602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smileyman_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c5c2064a15277650800000000000000
+      internalID: 6230489404264334785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smileyman_7
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4034c7f73ad99410800000000000000
+      internalID: 1484457486110175308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
