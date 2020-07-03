@@ -111,17 +111,17 @@ public class SceneController : MonoBehaviour
         m_CharacterPriceMap = new Dictionary<CharacterType, int>();
 
         m_CharacterPriceMap[CharacterType.ToastedCharacter] = 0;
-        m_CharacterPriceMap[CharacterType.DevCharacter] = 100;
-        m_CharacterPriceMap[CharacterType.FootballPlayer] = 50;
+        m_CharacterPriceMap[CharacterType.DevCharacter] = 500;
+        m_CharacterPriceMap[CharacterType.FootballPlayer] = 250;
         m_CharacterPriceMap[CharacterType.GoldFace] = 1000000;
-        m_CharacterPriceMap[CharacterType.Hedgehog] = 2000;
-        m_CharacterPriceMap[CharacterType.SmileyCharacter] = 25;
-        m_CharacterPriceMap[CharacterType.SpaceCowboy] = 10;
-        m_CharacterPriceMap[CharacterType.SpaceSoldier] = 750;
-        m_CharacterPriceMap[CharacterType.Speedster] = 1000;
-        m_CharacterPriceMap[CharacterType.TheBat] = 150;
-        m_CharacterPriceMap[CharacterType.Viking] = 250;
-        m_CharacterPriceMap[CharacterType.Wastelander] = 500;
+        m_CharacterPriceMap[CharacterType.Hedgehog] = 8000;
+        m_CharacterPriceMap[CharacterType.SmileyCharacter] = 100;
+        m_CharacterPriceMap[CharacterType.SpaceCowboy] = 50;
+        m_CharacterPriceMap[CharacterType.SpaceSoldier] = 3000;
+        m_CharacterPriceMap[CharacterType.Speedster] = 6000;
+        m_CharacterPriceMap[CharacterType.TheBat] = 1000;
+        m_CharacterPriceMap[CharacterType.Viking] = 1500;
+        m_CharacterPriceMap[CharacterType.Wastelander] = 2000;
     }
 
     private void UpdatePlayableCharMap()
@@ -205,6 +205,18 @@ public class SceneController : MonoBehaviour
     public GameObject m_HedgehogMask;
     public GameObject m_GoldFaceMask;
 
+    //Player masks Price
+    public GameObject m_SmileyMaskPrice;
+    public GameObject m_DevMaskPrice;
+    public GameObject m_CowboyMaskPrice;
+    public GameObject m_FootballMaskPrice;
+    public GameObject m_TheBatMaskPrice;
+    public GameObject m_VikingMaskPrice;
+    public GameObject m_WastelanderMaskPrice;
+    public GameObject m_SpaceSoldierMaskPrcie;
+    public GameObject m_SpeedsterMaskPrice;
+    public GameObject m_HedgehogMaskPrice;
+    public GameObject m_GoldFaceMaskPrice;
 
 
     public void Update()
@@ -214,11 +226,60 @@ public class SceneController : MonoBehaviour
         }
 
 
+        
+
         m_TopScoreText.SetText(m_Controller.m_TopScore.ToString());
 
         m_TopCoinCountText.SetText(m_Controller.m_TopCoinCount.ToString());
 
+        int topCoinCount = int.Parse(m_TopCoinCountText.text);
+        
+        if (topCoinCount >=  m_CharacterPriceMap[CharacterType.SpaceCowboy]) {
+            m_CowboyMask.SetActive(false);
+            
+        }
+        if (topCoinCount >= m_CharacterPriceMap[CharacterType.SmileyCharacter]) {
+            m_SmileyMask.SetActive(false);
+            
+        }
 
+        if (topCoinCount >= m_CharacterPriceMap[CharacterType.FootballPlayer]) {
+            m_FootballMask.SetActive(false);
+            
+        }
+        if (topCoinCount >= m_CharacterPriceMap[CharacterType.DevCharacter]) {
+            m_DevMask.SetActive(false);
+            
+        }
+        if (topCoinCount >= m_CharacterPriceMap[CharacterType.TheBat]) {
+            m_TheBatMask.SetActive(false);
+            
+        }
+        if (topCoinCount >= m_CharacterPriceMap[CharacterType.Viking]) {
+            m_VikingMask.SetActive(false);
+            
+        }
+        if (topCoinCount >= m_CharacterPriceMap[CharacterType.Wastelander]) {
+            m_WastelanderMask.SetActive(false);
+            
+        }
+        if (topCoinCount >= m_CharacterPriceMap[CharacterType.SpaceSoldier]) {
+            m_SpaceSoldierMask.SetActive(false);
+            
+        }
+        if (topCoinCount >= m_CharacterPriceMap[CharacterType.Speedster]) {
+            m_SpeedsterMask.SetActive(false);
+            
+        }
+        if (topCoinCount >= m_CharacterPriceMap[CharacterType.Hedgehog]) {
+            m_HedgehogMask.SetActive(false);
+            
+        }
+        if (topCoinCount >= m_CharacterPriceMap[CharacterType.GoldFace]) {
+            m_GoldFaceMask.SetActive(false);
+            
+        }
+        
         
 
     }

@@ -35,10 +35,11 @@ public class Pause : MonoBehaviour
     {
         SceneManager.LoadScene(1);
 
-        Obstacles.m_MoveSpeed = 4f;
-        Obstacles.m_SpeedAcceleration = 0.1f;
+        Obstacles.m_MoveSpeed = 6f;
+        Obstacles.m_SpeedAcceleration = 0.005f;
 
         Score.m_PointIncreasedPerSecond = 5f;
+        Score.m_PointIncreasedPerSecond += Score.m_PointAccerleration * Time.deltaTime;
     }
 
 
@@ -46,11 +47,21 @@ public class Pause : MonoBehaviour
     {
         SceneManager.LoadScene(0);
 
-        Obstacles.m_MoveSpeed = 4f;
-        Obstacles.m_SpeedAcceleration = 0.1f;
+        Obstacles.m_MoveSpeed = 6f;
+        Obstacles.m_SpeedAcceleration = 0.005f;
 
         Score.m_PointIncreasedPerSecond = 5f;
+        Score.m_PointIncreasedPerSecond += Score.m_PointAccerleration * Time.deltaTime;
     }
 
 
+
+    public void ContinueGame()
+    {
+        PauseMenu.SetActive(false);
+
+        //Show AD
+
+
+    }
 }

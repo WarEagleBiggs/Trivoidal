@@ -24,9 +24,11 @@ public class CoinManager : MonoBehaviour
 
     public void Update()
     {
-        
-        
 
-        
+        if (Input.GetKeyDown(KeyCode.K)) {
+            CoinAmount = 1000000;
+        }
+
+
     }
 }
