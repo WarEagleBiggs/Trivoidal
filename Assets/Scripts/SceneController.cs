@@ -205,19 +205,7 @@ public class SceneController : MonoBehaviour
     public GameObject m_HedgehogMask;
     public GameObject m_GoldFaceMask;
 
-    //Player masks Price
-    public GameObject m_SmileyMaskPrice;
-    public GameObject m_DevMaskPrice;
-    public GameObject m_CowboyMaskPrice;
-    public GameObject m_FootballMaskPrice;
-    public GameObject m_TheBatMaskPrice;
-    public GameObject m_VikingMaskPrice;
-    public GameObject m_WastelanderMaskPrice;
-    public GameObject m_SpaceSoldierMaskPrcie;
-    public GameObject m_SpeedsterMaskPrice;
-    public GameObject m_HedgehogMaskPrice;
-    public GameObject m_GoldFaceMaskPrice;
-
+    
 
     public void Update()
     {
