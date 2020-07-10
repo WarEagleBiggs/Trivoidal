@@ -20,8 +20,21 @@ public class SceneController : MonoBehaviour
 
     public TMP_Text m_TopCoinCountText;
 
-    
-    
+    //SelectedPlayerDisplay
+    public GameObject m_SmileyDisplay;
+    public GameObject m_DevDisplay;
+    public GameObject m_CowboyDisplay;
+    public GameObject m_FootballDisplay;
+    public GameObject m_TheBatDisplay;
+    public GameObject m_VikingDisplay;
+    public GameObject m_WastelanderDisplay;
+    public GameObject m_SpaceSoldierDisplay;
+    public GameObject m_SpeedsterDisplay;
+    public GameObject m_HedgehogDisplay;
+    public GameObject m_GoldFaceDisplay;
+    public GameObject m_ToastedDisplay;
+
+
     // associative map of character name and whether playable
     private Dictionary<CharacterType, bool> m_PlayableCharacterMap;
 
@@ -81,28 +94,172 @@ public class SceneController : MonoBehaviour
 
         if (btnName == "DevPlayer" && IsCharacterPlayable(CharacterType.DevCharacter)) {
             m_Controller.m_CharacterType = CharacterType.DevCharacter;
+            m_DevDisplay.SetActive(true);
+            m_ToastedDisplay.SetActive(false);
+            m_SmileyDisplay.SetActive(false);
+            m_CowboyDisplay.SetActive(false);
+            m_FootballDisplay.SetActive(false);
+            m_TheBatDisplay.SetActive(false);
+            m_VikingDisplay.SetActive(false);
+            m_WastelanderDisplay.SetActive(false);
+            m_SpaceSoldierDisplay.SetActive(false);
+            m_SpeedsterDisplay.SetActive(false);
+            m_HedgehogDisplay.SetActive(false);
+            m_GoldFaceDisplay.SetActive(false);
         } else if (btnName == "ToastedPlayer" && IsCharacterPlayable(CharacterType.ToastedCharacter)) {
             m_Controller.m_CharacterType = CharacterType.ToastedCharacter;
+            m_DevDisplay.SetActive(false);
+            m_ToastedDisplay.SetActive(true);
+            m_SmileyDisplay.SetActive(false);
+            m_CowboyDisplay.SetActive(false);
+            m_FootballDisplay.SetActive(false);
+            m_TheBatDisplay.SetActive(false);
+            m_VikingDisplay.SetActive(false);
+            m_WastelanderDisplay.SetActive(false);
+            m_SpaceSoldierDisplay.SetActive(false);
+            m_SpeedsterDisplay.SetActive(false);
+            m_HedgehogDisplay.SetActive(false);
+            m_GoldFaceDisplay.SetActive(false);
         } else if (btnName == "SmileyPlayer" && IsCharacterPlayable(CharacterType.SmileyCharacter)) {
             m_Controller.m_CharacterType = CharacterType.SmileyCharacter;
+            m_DevDisplay.SetActive(false);
+            m_ToastedDisplay.SetActive(false);
+            m_SmileyDisplay.SetActive(true);
+            m_CowboyDisplay.SetActive(false);
+            m_FootballDisplay.SetActive(false);
+            m_TheBatDisplay.SetActive(false);
+            m_VikingDisplay.SetActive(false);
+            m_WastelanderDisplay.SetActive(false);
+            m_SpaceSoldierDisplay.SetActive(false);
+            m_SpeedsterDisplay.SetActive(false);
+            m_HedgehogDisplay.SetActive(false);
+            m_GoldFaceDisplay.SetActive(false);
         } else if (btnName == "SpaceCowboy" && IsCharacterPlayable(CharacterType.SpaceCowboy)) {
             m_Controller.m_CharacterType = CharacterType.SpaceCowboy;
+            m_DevDisplay.SetActive(false);
+            m_ToastedDisplay.SetActive(false);
+            m_SmileyDisplay.SetActive(false);
+            m_CowboyDisplay.SetActive(true);
+            m_FootballDisplay.SetActive(false);
+            m_TheBatDisplay.SetActive(false);
+            m_VikingDisplay.SetActive(false);
+            m_WastelanderDisplay.SetActive(false);
+            m_SpaceSoldierDisplay.SetActive(false);
+            m_SpeedsterDisplay.SetActive(false);
+            m_HedgehogDisplay.SetActive(false);
+            m_GoldFaceDisplay.SetActive(false);
         } else if (btnName == "FootballPlayer" && IsCharacterPlayable(CharacterType.FootballPlayer)) {
             m_Controller.m_CharacterType = CharacterType.FootballPlayer;
+            m_DevDisplay.SetActive(false);
+            m_ToastedDisplay.SetActive(false);
+            m_SmileyDisplay.SetActive(false);
+            m_CowboyDisplay.SetActive(false);
+            m_FootballDisplay.SetActive(true);
+            m_TheBatDisplay.SetActive(false);
+            m_VikingDisplay.SetActive(false);
+            m_WastelanderDisplay.SetActive(false);
+            m_SpaceSoldierDisplay.SetActive(false);
+            m_SpeedsterDisplay.SetActive(false);
+            m_HedgehogDisplay.SetActive(false);
+            m_GoldFaceDisplay.SetActive(false);
         } else if (btnName == "TheBat" && IsCharacterPlayable(CharacterType.TheBat)) {
             m_Controller.m_CharacterType = CharacterType.TheBat;
+            m_DevDisplay.SetActive(false);
+            m_ToastedDisplay.SetActive(false);
+            m_SmileyDisplay.SetActive(false);
+            m_CowboyDisplay.SetActive(false);
+            m_FootballDisplay.SetActive(false);
+            m_TheBatDisplay.SetActive(true);
+            m_VikingDisplay.SetActive(false);
+            m_WastelanderDisplay.SetActive(false);
+            m_SpaceSoldierDisplay.SetActive(false);
+            m_SpeedsterDisplay.SetActive(false);
+            m_HedgehogDisplay.SetActive(false);
+            m_GoldFaceDisplay.SetActive(false);
         } else if (btnName == "Viking" && IsCharacterPlayable(CharacterType.Viking)) {
             m_Controller.m_CharacterType = CharacterType.Viking;
+            m_DevDisplay.SetActive(false);
+            m_ToastedDisplay.SetActive(false);
+            m_SmileyDisplay.SetActive(false);
+            m_CowboyDisplay.SetActive(false);
+            m_FootballDisplay.SetActive(false);
+            m_TheBatDisplay.SetActive(false);
+            m_VikingDisplay.SetActive(true);
+            m_WastelanderDisplay.SetActive(false);
+            m_SpaceSoldierDisplay.SetActive(false);
+            m_SpeedsterDisplay.SetActive(false);
+            m_HedgehogDisplay.SetActive(false);
+            m_GoldFaceDisplay.SetActive(false);
         } else if (btnName == "Wastelander" && IsCharacterPlayable(CharacterType.Wastelander)) {
             m_Controller.m_CharacterType = CharacterType.Wastelander;
+            m_DevDisplay.SetActive(false);
+            m_ToastedDisplay.SetActive(false);
+            m_SmileyDisplay.SetActive(false);
+            m_CowboyDisplay.SetActive(false);
+            m_FootballDisplay.SetActive(false);
+            m_TheBatDisplay.SetActive(false);
+            m_VikingDisplay.SetActive(false);
+            m_WastelanderDisplay.SetActive(true);
+            m_SpaceSoldierDisplay.SetActive(false);
+            m_SpeedsterDisplay.SetActive(false);
+            m_HedgehogDisplay.SetActive(false);
+            m_GoldFaceDisplay.SetActive(false);
         } else if (btnName == "SpaceSoldier" && IsCharacterPlayable(CharacterType.SpaceSoldier)) {
             m_Controller.m_CharacterType = CharacterType.SpaceSoldier;
+            m_DevDisplay.SetActive(false);
+            m_ToastedDisplay.SetActive(false);
+            m_SmileyDisplay.SetActive(false);
+            m_CowboyDisplay.SetActive(false);
+            m_FootballDisplay.SetActive(false);
+            m_TheBatDisplay.SetActive(false);
+            m_VikingDisplay.SetActive(false);
+            m_WastelanderDisplay.SetActive(false);
+            m_SpaceSoldierDisplay.SetActive(true);
+            m_SpeedsterDisplay.SetActive(false);
+            m_HedgehogDisplay.SetActive(false);
+            m_GoldFaceDisplay.SetActive(false);
         } else if (btnName == "Speedster" && IsCharacterPlayable(CharacterType.Speedster)) {
             m_Controller.m_CharacterType = CharacterType.Speedster;
+            m_DevDisplay.SetActive(false);
+            m_ToastedDisplay.SetActive(false);
+            m_SmileyDisplay.SetActive(false);
+            m_CowboyDisplay.SetActive(false);
+            m_FootballDisplay.SetActive(false);
+            m_TheBatDisplay.SetActive(false);
+            m_VikingDisplay.SetActive(false);
+            m_WastelanderDisplay.SetActive(false);
+            m_SpaceSoldierDisplay.SetActive(false);
+            m_SpeedsterDisplay.SetActive(true);
+            m_HedgehogDisplay.SetActive(false);
+            m_GoldFaceDisplay.SetActive(false);
         } else if (btnName == "Hedgehog" && IsCharacterPlayable(CharacterType.Hedgehog)) {
             m_Controller.m_CharacterType = CharacterType.Hedgehog;
+            m_DevDisplay.SetActive(false);
+            m_ToastedDisplay.SetActive(false);
+            m_SmileyDisplay.SetActive(false);
+            m_CowboyDisplay.SetActive(false);
+            m_FootballDisplay.SetActive(false);
+            m_TheBatDisplay.SetActive(false);
+            m_VikingDisplay.SetActive(false);
+            m_WastelanderDisplay.SetActive(false);
+            m_SpaceSoldierDisplay.SetActive(false);
+            m_SpeedsterDisplay.SetActive(false);
+            m_HedgehogDisplay.SetActive(true);
+            m_GoldFaceDisplay.SetActive(false);
         } else if (btnName == "GoldFace" && IsCharacterPlayable(CharacterType.GoldFace)) {
             m_Controller.m_CharacterType = CharacterType.GoldFace;
+            m_DevDisplay.SetActive(false);
+            m_ToastedDisplay.SetActive(false);
+            m_SmileyDisplay.SetActive(false);
+            m_CowboyDisplay.SetActive(false);
+            m_FootballDisplay.SetActive(false);
+            m_TheBatDisplay.SetActive(false);
+            m_VikingDisplay.SetActive(false);
+            m_WastelanderDisplay.SetActive(false);
+            m_SpaceSoldierDisplay.SetActive(false);
+            m_SpeedsterDisplay.SetActive(false);
+            m_HedgehogDisplay.SetActive(false);
+            m_GoldFaceDisplay.SetActive(true);
         }
     }
 
@@ -205,7 +362,9 @@ public class SceneController : MonoBehaviour
     public GameObject m_HedgehogMask;
     public GameObject m_GoldFaceMask;
 
+
     
+
 
     public void Update()
     {
