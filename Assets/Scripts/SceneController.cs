@@ -16,6 +16,10 @@ public class SceneController : MonoBehaviour
 
     public GameObject m_AnnoyingUI2;
 
+    public GameObject m_AnnoyingUI3;
+
+    public GameObject m_AnnoyingUI4;
+
     public TMP_Text m_TopScoreText;
 
     public TMP_Text m_TopCoinCountText;
@@ -40,6 +44,17 @@ public class SceneController : MonoBehaviour
 
     // associative map of character name and price to buy
     private Dictionary<CharacterType, int> m_CharacterPriceMap;
+
+    public AdManager AdMan;
+    
+    
+    public void ShowAd()
+    {
+        AdMan.StartCoroutine("ShowAd");
+        m_Controller.m_TopCoinCount = m_Controller.m_TopCoinCount + 10;
+        
+
+    }
 
     public void PlayGame()
     {
@@ -70,12 +85,14 @@ public class SceneController : MonoBehaviour
     }
 
     private bool IsCharacterPlayable(CharacterType type)
-    {
+    {   
         return m_PlayableCharacterMap[type];
     }
 
     private void Start()
     {
+        m_Controller = MasterController.GetInstance;
+
         if (m_PlayableCharacterMap == null) {
             InitPlayerCharMap();
         }
@@ -347,6 +364,10 @@ public class SceneController : MonoBehaviour
         m_AnnoyingUI.SetActive(!m_AnnoyingUI.activeSelf);
 
         m_AnnoyingUI2.SetActive(!m_AnnoyingUI2.activeSelf);
+
+        m_AnnoyingUI3.SetActive(m_AnnoyingUI2.activeSelf);
+
+        m_AnnoyingUI4.SetActive(!m_AnnoyingUI4.activeSelf);
     }
 
     //Player masks
@@ -373,7 +394,14 @@ public class SceneController : MonoBehaviour
         }
 
 
-        
+        if (Input.GetKeyDown(KeyCode.O)) {
+            Debug.Log(m_Controller.m_CurrentScore);
+        }
+
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            //m_Controller.Serialize();
+        }
 
         m_TopScoreText.SetText(m_Controller.m_TopScore.ToString());
 

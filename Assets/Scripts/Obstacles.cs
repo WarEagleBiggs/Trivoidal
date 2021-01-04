@@ -6,7 +6,7 @@ public class Obstacles : MonoBehaviour
 {
     public static float m_MoveSpeed = 6f;
 
-    public static float m_SpeedAcceleration = 0.005f;
+    public static float m_SpeedAcceleration = 0.0005f;
 
     //private float m_StartTime = 0f;
 
@@ -34,7 +34,13 @@ public class Obstacles : MonoBehaviour
 
         m_MoveSpeed += m_SpeedAcceleration * Time.deltaTime;
 
-        Debug.Log(m_MoveSpeed);
+        //Debug.Log(m_MoveSpeed);
+
+
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            m_SpeedAcceleration = m_SpeedAcceleration * 1.5f;
+        }
 
 
 
