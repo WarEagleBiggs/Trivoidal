@@ -325,31 +325,6 @@ PlayerSettings:
       m_Kind: 3
       m_SubKind: iPad
     - m_Textures: []
-      m_Width: 87
-      m_Height: 87
-      m_Kind: 1
-      m_SubKind: iPhone
-    - m_Textures: []
-      m_Width: 58
-      m_Height: 58
-      m_Kind: 1
-      m_SubKind: iPhone
-    - m_Textures: []
-      m_Width: 29
-      m_Height: 29
-      m_Kind: 1
-      m_SubKind: iPhone
-    - m_Textures: []
-      m_Width: 58
-      m_Height: 58
-      m_Kind: 1
-      m_SubKind: iPad
-    - m_Textures: []
-      m_Width: 29
-      m_Height: 29
-      m_Kind: 1
-      m_SubKind: iPad
-    - m_Textures: []
       m_Width: 60
       m_Height: 60
       m_Kind: 2
@@ -374,6 +349,31 @@ PlayerSettings:
       m_Height: 1024
       m_Kind: 4
       m_SubKind: App Store
+    - m_Textures: []
+      m_Width: 87
+      m_Height: 87
+      m_Kind: 1
+      m_SubKind: iPhone
+    - m_Textures: []
+      m_Width: 58
+      m_Height: 58
+      m_Kind: 1
+      m_SubKind: iPhone
+    - m_Textures: []
+      m_Width: 29
+      m_Height: 29
+      m_Kind: 1
+      m_SubKind: iPhone
+    - m_Textures: []
+      m_Width: 58
+      m_Height: 58
+      m_Kind: 1
+      m_SubKind: iPad
+    - m_Textures: []
+      m_Width: 29
+      m_Height: 29
+      m_Kind: 1
+      m_SubKind: iPad
   m_BuildTargetBatching: []
   m_BuildTargetGraphicsJobs:
   - m_BuildTarget: MacStandaloneSupport
