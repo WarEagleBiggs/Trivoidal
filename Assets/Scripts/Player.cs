@@ -63,5 +63,8 @@ public class Player : MonoBehaviour
         }
 
 
+        // serialize data every frame
+        MasterController.GetInstance.Serialize();
+
     }
 }

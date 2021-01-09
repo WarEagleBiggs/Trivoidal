@@ -31,7 +31,7 @@ public class SelectPlayer : MonoBehaviour
             m_Controller = MasterController.GetInstance;
         }
         
-        if (m_Controller.m_CharacterType == CharacterType.DevCharacter) {
+        if (m_Controller.CharacterType == CharacterType.DevCharacter) {
             m_DevPlayer.SetActive(true);
             m_SmileyPlayer.SetActive(false);
             m_ToastedPlayer.SetActive(false);
@@ -44,7 +44,7 @@ public class SelectPlayer : MonoBehaviour
             m_Speedster.SetActive(false);
             m_Hedgehog.SetActive(false);
             m_GoldFace.SetActive(false);
-        } else if (m_Controller.m_CharacterType == CharacterType.SmileyCharacter) {
+        } else if (m_Controller.CharacterType == CharacterType.SmileyCharacter) {
             m_DevPlayer.SetActive(false);
             m_SmileyPlayer.SetActive(true);
             m_ToastedPlayer.SetActive(false);
@@ -57,7 +57,7 @@ public class SelectPlayer : MonoBehaviour
             m_Speedster.SetActive(false);
             m_Hedgehog.SetActive(false);
             m_GoldFace.SetActive(false);
-        } else if (m_Controller.m_CharacterType == CharacterType.ToastedCharacter) {
+        } else if (m_Controller.CharacterType == CharacterType.ToastedCharacter) {
             m_DevPlayer.SetActive(false);
             m_SmileyPlayer.SetActive(false);
             m_ToastedPlayer.SetActive(true);
@@ -70,7 +70,7 @@ public class SelectPlayer : MonoBehaviour
             m_Speedster.SetActive(false);
             m_Hedgehog.SetActive(false);
             m_GoldFace.SetActive(false);
-        } else if (m_Controller.m_CharacterType == CharacterType.SpaceCowboy) {
+        } else if (m_Controller.CharacterType == CharacterType.SpaceCowboy) {
             m_DevPlayer.SetActive(false);
             m_SmileyPlayer.SetActive(false);
             m_ToastedPlayer.SetActive(false);
@@ -83,7 +83,7 @@ public class SelectPlayer : MonoBehaviour
             m_Speedster.SetActive(false);
             m_Hedgehog.SetActive(false);
             m_GoldFace.SetActive(false);
-        } else if (m_Controller.m_CharacterType == CharacterType.FootballPlayer) {
+        } else if (m_Controller.CharacterType == CharacterType.FootballPlayer) {
             m_DevPlayer.SetActive(false);
             m_SmileyPlayer.SetActive(false);
             m_ToastedPlayer.SetActive(false);
@@ -96,7 +96,7 @@ public class SelectPlayer : MonoBehaviour
             m_Speedster.SetActive(false);
             m_Hedgehog.SetActive(false);
             m_GoldFace.SetActive(false);
-        } else if (m_Controller.m_CharacterType == CharacterType.TheBat) {
+        } else if (m_Controller.CharacterType == CharacterType.TheBat) {
             m_DevPlayer.SetActive(false);
             m_SmileyPlayer.SetActive(false);
             m_ToastedPlayer.SetActive(false);
@@ -109,7 +109,7 @@ public class SelectPlayer : MonoBehaviour
             m_Speedster.SetActive(false);
             m_Hedgehog.SetActive(false);
             m_GoldFace.SetActive(false);
-        } else if (m_Controller.m_CharacterType == CharacterType.Viking) {
+        } else if (m_Controller.CharacterType == CharacterType.Viking) {
             m_DevPlayer.SetActive(false);
             m_SmileyPlayer.SetActive(false);
             m_ToastedPlayer.SetActive(false);
@@ -122,7 +122,7 @@ public class SelectPlayer : MonoBehaviour
             m_Speedster.SetActive(false);
             m_Hedgehog.SetActive(false);
             m_GoldFace.SetActive(false);
-        } else if (m_Controller.m_CharacterType == CharacterType.Wastelander) {
+        } else if (m_Controller.CharacterType == CharacterType.Wastelander) {
             m_DevPlayer.SetActive(false);
             m_SmileyPlayer.SetActive(false);
             m_ToastedPlayer.SetActive(false);
@@ -135,7 +135,7 @@ public class SelectPlayer : MonoBehaviour
             m_Speedster.SetActive(false);
             m_Hedgehog.SetActive(false);
             m_GoldFace.SetActive(false);
-        } else if (m_Controller.m_CharacterType == CharacterType.SpaceSoldier) {
+        } else if (m_Controller.CharacterType == CharacterType.SpaceSoldier) {
             m_DevPlayer.SetActive(false);
             m_SmileyPlayer.SetActive(false);
             m_ToastedPlayer.SetActive(false);
@@ -148,7 +148,7 @@ public class SelectPlayer : MonoBehaviour
             m_Speedster.SetActive(false);
             m_Hedgehog.SetActive(false);
             m_GoldFace.SetActive(false);
-        } else if (m_Controller.m_CharacterType == CharacterType.Speedster) {
+        } else if (m_Controller.CharacterType == CharacterType.Speedster) {
             m_DevPlayer.SetActive(false);
             m_SmileyPlayer.SetActive(false);
             m_ToastedPlayer.SetActive(false);
@@ -161,7 +161,7 @@ public class SelectPlayer : MonoBehaviour
             m_Speedster.SetActive(true);
             m_Hedgehog.SetActive(false);
             m_GoldFace.SetActive(false);
-        } else if (m_Controller.m_CharacterType == CharacterType.Hedgehog) {
+        } else if (m_Controller.CharacterType == CharacterType.Hedgehog) {
             m_DevPlayer.SetActive(false);
             m_SmileyPlayer.SetActive(false);
             m_ToastedPlayer.SetActive(false);
@@ -174,7 +174,7 @@ public class SelectPlayer : MonoBehaviour
             m_Speedster.SetActive(false);
             m_Hedgehog.SetActive(true);
             m_GoldFace.SetActive(false);
-        } else if (m_Controller.m_CharacterType == CharacterType.GoldFace) {
+        } else if (m_Controller.CharacterType == CharacterType.GoldFace) {
             m_DevPlayer.SetActive(false);
             m_SmileyPlayer.SetActive(false);
             m_ToastedPlayer.SetActive(false);

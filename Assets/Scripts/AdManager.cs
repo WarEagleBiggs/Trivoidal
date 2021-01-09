@@ -16,10 +16,10 @@ public class AdManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (m_Controller.m_DeathCount == 5)
+        if (m_Controller.DeathCount == 5)
         {
             StartCoroutine("ShowSkipAd");
-            m_Controller.m_DeathCount = 0;
+            m_Controller.DeathCount = 0;
         }
     }
     IEnumerator ShowSkipAd()

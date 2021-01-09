@@ -21,7 +21,7 @@ public class Death : MonoBehaviour
 
         
 
-        m_Controller.m_DeathCount += 1;
+        m_Controller.DeathCount += 1;
         
 
         m_Pause.PauseMenu.SetActive(true);

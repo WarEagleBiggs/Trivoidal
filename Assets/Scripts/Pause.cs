@@ -96,7 +96,7 @@ public class Pause : MonoBehaviour
     {
         isGamePaused = false;
 
-        MasterController.GetInstance.m_CurrentScore = 0f;
+        MasterController.GetInstance.CurrentScore = 0f;
 
         SceneManager.LoadScene(2);
 
@@ -114,7 +114,7 @@ public class Pause : MonoBehaviour
 
     public void MenuLoad()
     {
-        MasterController.GetInstance.m_CurrentScore = 0f;
+        MasterController.GetInstance.CurrentScore = 0f;
         SceneManager.LoadScene(1);
 
         isGamePaused = false;

@@ -21,9 +21,8 @@ public class Score : MonoBehaviour
     
     void Start()
     {
-        m_ScoreAmount = MasterController.GetInstance.m_CurrentScore;
+        m_ScoreAmount = MasterController.GetInstance.CurrentScore;
         m_PointIncreasedPerSecond = 5f;
-        
         
     }
 
@@ -33,12 +32,12 @@ public class Score : MonoBehaviour
         {
             m_ScoreText.text = (int)m_ScoreAmount + "";
             //m_ScoreAmount += m_PointIncreasedPerSecond * Time.deltaTime;
-            MasterController.GetInstance.m_CurrentScore += m_PointIncreasedPerSecond * Time.deltaTime;
-            m_ScoreAmount = MasterController.GetInstance.m_CurrentScore;
+            MasterController.GetInstance.CurrentScore += m_PointIncreasedPerSecond * Time.deltaTime;
+            m_ScoreAmount = MasterController.GetInstance.CurrentScore;
 
-            if ((int)m_ScoreAmount > MasterController.GetInstance.m_TopScore)
+            if ((int)m_ScoreAmount > MasterController.GetInstance.TopScore)
             {
-                MasterController.GetInstance.m_TopScore = (int)m_ScoreAmount;
+                MasterController.GetInstance.TopScore = (int)m_ScoreAmount;
             }
         }
 

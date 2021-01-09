@@ -51,7 +51,7 @@ public class SceneController : MonoBehaviour
     public void ShowAd()
     {
         AdMan.StartCoroutine("ShowAd");
-        m_Controller.m_TopCoinCount = m_Controller.m_TopCoinCount + 10;
+        m_Controller.TopCoinCount = m_Controller.TopCoinCount + 10;
         
 
     }
@@ -110,7 +110,7 @@ public class SceneController : MonoBehaviour
         string btnName = EventSystem.current.currentSelectedGameObject.name;
 
         if (btnName == "DevPlayer" && IsCharacterPlayable(CharacterType.DevCharacter)) {
-            m_Controller.m_CharacterType = CharacterType.DevCharacter;
+            m_Controller.CharacterType = CharacterType.DevCharacter;
             m_DevDisplay.SetActive(true);
             m_ToastedDisplay.SetActive(false);
             m_SmileyDisplay.SetActive(false);
@@ -124,7 +124,7 @@ public class SceneController : MonoBehaviour
             m_HedgehogDisplay.SetActive(false);
             m_GoldFaceDisplay.SetActive(false);
         } else if (btnName == "ToastedPlayer" && IsCharacterPlayable(CharacterType.ToastedCharacter)) {
-            m_Controller.m_CharacterType = CharacterType.ToastedCharacter;
+            m_Controller.CharacterType = CharacterType.ToastedCharacter;
             m_DevDisplay.SetActive(false);
             m_ToastedDisplay.SetActive(true);
             m_SmileyDisplay.SetActive(false);
@@ -138,7 +138,7 @@ public class SceneController : MonoBehaviour
             m_HedgehogDisplay.SetActive(false);
             m_GoldFaceDisplay.SetActive(false);
         } else if (btnName == "SmileyPlayer" && IsCharacterPlayable(CharacterType.SmileyCharacter)) {
-            m_Controller.m_CharacterType = CharacterType.SmileyCharacter;
+            m_Controller.CharacterType = CharacterType.SmileyCharacter;
             m_DevDisplay.SetActive(false);
             m_ToastedDisplay.SetActive(false);
             m_SmileyDisplay.SetActive(true);
@@ -152,7 +152,7 @@ public class SceneController : MonoBehaviour
             m_HedgehogDisplay.SetActive(false);
             m_GoldFaceDisplay.SetActive(false);
         } else if (btnName == "SpaceCowboy" && IsCharacterPlayable(CharacterType.SpaceCowboy)) {
-            m_Controller.m_CharacterType = CharacterType.SpaceCowboy;
+            m_Controller.CharacterType = CharacterType.SpaceCowboy;
             m_DevDisplay.SetActive(false);
             m_ToastedDisplay.SetActive(false);
             m_SmileyDisplay.SetActive(false);
@@ -166,7 +166,7 @@ public class SceneController : MonoBehaviour
             m_HedgehogDisplay.SetActive(false);
             m_GoldFaceDisplay.SetActive(false);
         } else if (btnName == "FootballPlayer" && IsCharacterPlayable(CharacterType.FootballPlayer)) {
-            m_Controller.m_CharacterType = CharacterType.FootballPlayer;
+            m_Controller.CharacterType = CharacterType.FootballPlayer;
             m_DevDisplay.SetActive(false);
             m_ToastedDisplay.SetActive(false);
             m_SmileyDisplay.SetActive(false);
@@ -180,7 +180,7 @@ public class SceneController : MonoBehaviour
             m_HedgehogDisplay.SetActive(false);
             m_GoldFaceDisplay.SetActive(false);
         } else if (btnName == "TheBat" && IsCharacterPlayable(CharacterType.TheBat)) {
-            m_Controller.m_CharacterType = CharacterType.TheBat;
+            m_Controller.CharacterType = CharacterType.TheBat;
             m_DevDisplay.SetActive(false);
             m_ToastedDisplay.SetActive(false);
             m_SmileyDisplay.SetActive(false);
@@ -194,7 +194,7 @@ public class SceneController : MonoBehaviour
             m_HedgehogDisplay.SetActive(false);
             m_GoldFaceDisplay.SetActive(false);
         } else if (btnName == "Viking" && IsCharacterPlayable(CharacterType.Viking)) {
-            m_Controller.m_CharacterType = CharacterType.Viking;
+            m_Controller.CharacterType = CharacterType.Viking;
             m_DevDisplay.SetActive(false);
             m_ToastedDisplay.SetActive(false);
             m_SmileyDisplay.SetActive(false);
@@ -208,7 +208,7 @@ public class SceneController : MonoBehaviour
             m_HedgehogDisplay.SetActive(false);
             m_GoldFaceDisplay.SetActive(false);
         } else if (btnName == "Wastelander" && IsCharacterPlayable(CharacterType.Wastelander)) {
-            m_Controller.m_CharacterType = CharacterType.Wastelander;
+            m_Controller.CharacterType = CharacterType.Wastelander;
             m_DevDisplay.SetActive(false);
             m_ToastedDisplay.SetActive(false);
             m_SmileyDisplay.SetActive(false);
@@ -222,7 +222,7 @@ public class SceneController : MonoBehaviour
             m_HedgehogDisplay.SetActive(false);
             m_GoldFaceDisplay.SetActive(false);
         } else if (btnName == "SpaceSoldier" && IsCharacterPlayable(CharacterType.SpaceSoldier)) {
-            m_Controller.m_CharacterType = CharacterType.SpaceSoldier;
+            m_Controller.CharacterType = CharacterType.SpaceSoldier;
             m_DevDisplay.SetActive(false);
             m_ToastedDisplay.SetActive(false);
             m_SmileyDisplay.SetActive(false);
@@ -236,7 +236,7 @@ public class SceneController : MonoBehaviour
             m_HedgehogDisplay.SetActive(false);
             m_GoldFaceDisplay.SetActive(false);
         } else if (btnName == "Speedster" && IsCharacterPlayable(CharacterType.Speedster)) {
-            m_Controller.m_CharacterType = CharacterType.Speedster;
+            m_Controller.CharacterType = CharacterType.Speedster;
             m_DevDisplay.SetActive(false);
             m_ToastedDisplay.SetActive(false);
             m_SmileyDisplay.SetActive(false);
@@ -250,7 +250,7 @@ public class SceneController : MonoBehaviour
             m_HedgehogDisplay.SetActive(false);
             m_GoldFaceDisplay.SetActive(false);
         } else if (btnName == "Hedgehog" && IsCharacterPlayable(CharacterType.Hedgehog)) {
-            m_Controller.m_CharacterType = CharacterType.Hedgehog;
+            m_Controller.CharacterType = CharacterType.Hedgehog;
             m_DevDisplay.SetActive(false);
             m_ToastedDisplay.SetActive(false);
             m_SmileyDisplay.SetActive(false);
@@ -264,7 +264,7 @@ public class SceneController : MonoBehaviour
             m_HedgehogDisplay.SetActive(true);
             m_GoldFaceDisplay.SetActive(false);
         } else if (btnName == "GoldFace" && IsCharacterPlayable(CharacterType.GoldFace)) {
-            m_Controller.m_CharacterType = CharacterType.GoldFace;
+            m_Controller.CharacterType = CharacterType.GoldFace;
             m_DevDisplay.SetActive(false);
             m_ToastedDisplay.SetActive(false);
             m_SmileyDisplay.SetActive(false);
@@ -300,7 +300,7 @@ public class SceneController : MonoBehaviour
 
     private void UpdatePlayableCharMap()
     {
-        int totalCoins = MasterController.GetInstance.m_TopCoinCount;
+        int totalCoins = MasterController.GetInstance.TopCoinCount;
 
         if (totalCoins >= m_CharacterPriceMap[CharacterType.ToastedCharacter]) {
             m_PlayableCharacterMap[CharacterType.ToastedCharacter] = true;
@@ -383,29 +383,23 @@ public class SceneController : MonoBehaviour
     public GameObject m_HedgehogMask;
     public GameObject m_GoldFaceMask;
 
-
-    
-
-
     public void Update()
     {
         if (m_Controller == null) {
             m_Controller = MasterController.GetInstance;
         }
 
-
         if (Input.GetKeyDown(KeyCode.O)) {
-            Debug.Log(m_Controller.m_CurrentScore);
+            Debug.Log(m_Controller.CurrentScore);
         }
 
         if (Input.GetKeyDown(KeyCode.L))
         {
-            //m_Controller.Serialize();
         }
 
-        m_TopScoreText.SetText(m_Controller.m_TopScore.ToString());
+        m_TopScoreText.SetText(m_Controller.TopScore.ToString());
 
-        m_TopCoinCountText.SetText(m_Controller.m_TopCoinCount.ToString());
+        m_TopCoinCountText.SetText(m_Controller.TopCoinCount.ToString());
 
         int topCoinCount = int.Parse(m_TopCoinCountText.text);
         
@@ -454,9 +448,9 @@ public class SceneController : MonoBehaviour
             m_GoldFaceMask.SetActive(false);
             
         }
-        
-        
 
+        // serialize data every frame
+        MasterController.GetInstance.Serialize();
     }
 
 }
