@@ -22,6 +22,8 @@ public class Pause : MonoBehaviour
 
     public Score ScoreScript;
 
+    public CoinManager CoinMan;
+
     public AdManager AdMan;
 
     public AudioSource JumpSound;
@@ -32,10 +34,15 @@ public class Pause : MonoBehaviour
 
     public float Amount;
 
+    public float AmountOfCoins;
+
     //float starTime = Time.time;
 
     [SerializeField]
     public float TravelAmount;
+
+    [SerializeField]
+    public float CoinAmount;
 
     
 
@@ -97,6 +104,8 @@ public class Pause : MonoBehaviour
         isGamePaused = false;
 
         MasterController.GetInstance.CurrentScore = 0f;
+        MasterController.GetInstance.m_CoinsGathered = 0;
+
 
         SceneManager.LoadScene(2);
 
@@ -133,12 +142,13 @@ public class Pause : MonoBehaviour
     public void ContinueGame()
     {
         AdMan.StartCoroutine("ShowAd");
-        
-        
+
 
         //isGameContinuing = false;
 
         TravelAmount = Amount;
+
+        CoinAmount = AmountOfCoins;
 
         ButtonAfter.SetActive(true);
 
@@ -166,6 +176,10 @@ public class Pause : MonoBehaviour
 
         //PlayerMan.SetActive(True);
 
+        /*int score = int.Parse(CoinMan.CoinScoreboard.text);
+        score = score + ScoreScript.m_CurrentCoinCount;
+        CoinMan.CoinScoreboard.text = score.ToString();*/
+
         Obstacles.m_MoveSpeed = 6f;
         Obstacles.m_SpeedAcceleration = 0.0005f;
         backgroundArt.m_MoveSpeed = 3f;
@@ -174,6 +188,11 @@ public class Pause : MonoBehaviour
         Score.m_PointIncreasedPerSecond = 5f;
         Score.m_PointIncreasedPerSecond += Score.m_PointAccerleration * Time.deltaTime;
 
+        //int Test = int.Parse(ScoreScript.CoinScoreboard.text);
+        //ScoreScript.m_CurrentCoinCount;
+
+
+       
 
     }
 }

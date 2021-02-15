@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
 using TMPro;
+using UnityEngine.Audio;
 
 public class SceneController : MonoBehaviour
 {
@@ -20,9 +21,15 @@ public class SceneController : MonoBehaviour
 
     public GameObject m_AnnoyingUI4;
 
+    public GameObject m_AnnoyingUI5;
+
     public TMP_Text m_TopScoreText;
 
     public TMP_Text m_TopCoinCountText;
+
+    public GameObject Music1;
+
+    //public bool isAudioON = true;
 
     //SelectedPlayerDisplay
     public GameObject m_SmileyDisplay;
@@ -63,6 +70,14 @@ public class SceneController : MonoBehaviour
 
     }
 
+    public void ToggleMusic()
+    {
+        Music1.SetActive(!Music1.activeSelf);
+        m_Controller.m_IsAudioEnabled = !m_Controller.m_IsAudioEnabled;
+        
+  
+    }
+
     private void InitPlayerCharMap()
     {
         // Create map
@@ -100,6 +115,11 @@ public class SceneController : MonoBehaviour
         if (m_CharacterPriceMap == null) {
             InitCharPriceMap();
         }
+
+         
+        
+        Music1.SetActive(m_Controller.m_IsAudioEnabled);
+        
     }
     
 
@@ -368,6 +388,10 @@ public class SceneController : MonoBehaviour
         m_AnnoyingUI3.SetActive(m_AnnoyingUI2.activeSelf);
 
         m_AnnoyingUI4.SetActive(!m_AnnoyingUI4.activeSelf);
+
+        m_AnnoyingUI5.SetActive(!m_AnnoyingUI5.activeSelf);
+
+       
     }
 
     //Player masks

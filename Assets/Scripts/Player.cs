@@ -20,6 +20,10 @@ public class Player : MonoBehaviour
     public AudioSource JumpSound;
 
     public Pause PauseScript;
+
+    public SceneController S_Controller;
+
+    public GameObject GameMusic;
     
 
 
@@ -27,12 +31,17 @@ public class Player : MonoBehaviour
     {
         rigidBody = GetComponent<Rigidbody2D>();
 
+        GameMusic.SetActive(MasterController.GetInstance.m_IsAudioEnabled);
+
     }
     public void Sound()
     {
-        if (JumpSound.isPlaying == false)
+        if (MasterController.GetInstance.m_IsAudioEnabled)
         {
-            JumpSound.Play();
+            if (JumpSound.isPlaying == false)
+            {
+                JumpSound.Play();
+            }
         }
     }
 

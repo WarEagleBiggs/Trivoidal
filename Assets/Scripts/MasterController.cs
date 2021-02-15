@@ -59,6 +59,8 @@ public class MasterController
     public static MasterController GetInstance =>
         s_Instance ?? (s_Instance = new MasterController());
 
+    public bool m_IsAudioEnabled = true;
+    public int m_CoinsGathered = 0;
 
     public void Serialize()
     {

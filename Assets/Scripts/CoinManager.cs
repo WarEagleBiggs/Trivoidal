@@ -11,23 +11,32 @@ public class CoinManager : MonoBehaviour
     public int CoinAmount = 1;
     public AudioSource CoinSound;
 
+    public SceneController S_Controller;
+
+    
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Destroy(gameObject);
 
-        int score = int.Parse(CoinScoreboard.text);
+        MasterController.GetInstance.m_CoinsGathered += CoinAmount;
 
-        score += CoinAmount;
-
-        CoinScoreboard.text = score.ToString();
+        // update TMP score string
+        CoinScoreboard.text = MasterController.GetInstance.m_CoinsGathered.ToString();
 
         MasterController.GetInstance.TopCoinCount += CoinAmount;
 
-        CoinSound.Play();
+        if (MasterController.GetInstance.m_IsAudioEnabled)
+        {
+            CoinSound.Play();
+        }
     }
 
     public void Update()
     {
+
+        // update tmp score string
+        CoinScoreboard.text = MasterController.GetInstance.m_CoinsGathered.ToString();
 
         if (Input.GetKeyDown(KeyCode.K)) {
             CoinAmount = 1000000;
